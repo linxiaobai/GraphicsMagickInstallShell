@@ -63,7 +63,7 @@ def check_is_config_path(path):
 		if (line.find("export") >= 0 and line.find(path.lower()) >= 0):
 			return True
 	return False
-#has a bug, can't let env work in shell
+# TODO has a bug, can't let env work in shell
 def config_sys_path(path):
 	if (check_is_config_path(path)):
 		print path + " has already been config"
